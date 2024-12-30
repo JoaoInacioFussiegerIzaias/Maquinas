@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @maquina %>
+
+<div class="mt-4" >
+  <%= link_to "Editar", edit_maquina_path(@maquina), class: "bg-white border p-4 border-gray-500 text-black hover:bg-gray-200 px-4 py-1" %> |
+  <%= link_to "Voltar", maquinas_path, class: "bg-white border p-4 border-gray-500 text-black hover:bg-gray-200 px-4 py-1" %>
+</div>
+<div class="mt-4" >
+  <%= button_to "Deletar", @maquina, method: :delete, class: "bg-white border p-4 border-gray-500 text-black hover:bg-gray-200 px-4 py-1" %>
+</div>
+

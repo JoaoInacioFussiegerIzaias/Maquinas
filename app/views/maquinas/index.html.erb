@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+
+<!--br pra quebra de linha -->
+
+<h1 class="text-2xl">Maquinas</h1><br>
+<div>
+    <div id="maquinas">
+      <% @maquinas.each do |maquina| %>
+        <%= render maquina %>
+            <p class=""><br>
+              <%= button_to "Ver maquina", maquina, method: :get, class: "bg-white border p-4 border-gray-500 text-black hover:bg-gray-200 px-4 py-2"%>
+            </p><br>
+      <% end %>
+    </div>
+</div><br>
+<!--/bg-white COR DE FUNDO/ /border BORDA/ /p-4 TAMANHO DA BORDA/ /border-gray-500 COR DA BORDA/ /text-black COR DO TEXTO/ /hover:bg-gray-200 MUDAR O MOUSE E A COR DO BOTAO/ px-4 py-2 rounded-->
+<%= button_to "Criar Máquina", new_maquina_path, method: :get, class: "bg-white border p-4 border-gray-500 text-black hover:bg-gray-200 px-4 py-2" %>
+

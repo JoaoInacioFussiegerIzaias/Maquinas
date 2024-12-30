@@ -1,0 +1,2 @@
+module BenVindoHelper
+end
